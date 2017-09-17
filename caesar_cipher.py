@@ -10,8 +10,9 @@ Alexander Stepanov (c) 2017
 
 https://ru.wikipedia.org/wiki/%D0%A8%D0%B8%D1%84%D1%80_%D0%A6%D0%B5%D0%B7%D0%B0%D1%80%D1%8F
 
-Проверить работоспособность алгоритма можно здесь:
-http://planetcalc.ru/1434/
+In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher,
+Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques.
+https://en.wikipedia.org/wiki/Caesar_cipher
 """
 
 eng_abc = 'abcdefghijklmnopqrstuvwxyz'
@@ -83,10 +84,6 @@ if __name__ == '__main__':
     print(tst_enc)
     tst_dec = caesar_dec(tst_enc, 100)
     print(tst_dec)
-
-
-    #st = 'Зижцодыы юегчя: швцъывым ёележеддеще цщыдизишц Шябиеж Щцвыдияде я ыще зсд, Щжыщщя Шя.'
-    #st = 'ЭЙИБЯА ОЫЁЕИ: "ГЕЭДЕ, Х ЕЗИЦШВФ ИЫЧХ ЗЫЧЫ?" БЕОГЦЖ!'
-    st = 'Яртпцв, Дтэбфр т Ъощбх!'
+    
     for x in range(1,32):
-        print('({0}) {1}=>{2}'.format(x, st, caesar_dec(st, x)))
+        print('({0}) {1}=>{2}'.format(x, tst_enc, caesar_dec(tst_enc, x)))
