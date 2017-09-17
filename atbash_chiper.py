@@ -1,4 +1,5 @@
 """
+Alexander Stepanov (c) 2017
 Шифр Атбаш
 
 Atbash (monoalphabetic substitution cipher)
