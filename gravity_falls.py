@@ -8,7 +8,7 @@ print('='*80)
 print('Зашифровано шифром Цезаря, см. коментарии к строкам выше (место в книге)')
 print('='*80)
 
-for line in open('caesar'):
+for line in open('caesar.txt'):
     if line[0] == '#':
         print('-' * 80,'\n',line)
         continue
@@ -21,7 +21,7 @@ print('='*80)
 print('Текст из Дневника 3 Гравити Фоллз (самый длинный),\nхранился в шкатулке с нацарапанным на крышке словом "ПАЙНС"')
 print('Текст зашифрован шифром Виженера, а слово "ПАЙНС" является паролем')
 print('='*80)
-print(vigenere_cipher.vigenere_file_dec('ПАЙНС','ПАЙНС'))
+print(vigenere_cipher.vigenere_file_dec('ПАЙНС.txt','ПАЙНС'))
 
 print('='*80,'\n\n\n')
 
