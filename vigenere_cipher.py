@@ -53,7 +53,7 @@ def vigenere_enc(line, password, offset=0, neg_pass_offset=False):
         if neg_pass_offset == True:
             pass_offset = -pass_offset
 
-        # Get char in line
+        # Get char from line
         if (char in eng_abc) or (char in ENG_ABC):
             if char in eng_abc:
                 current_abc = eng_abc
@@ -125,7 +125,7 @@ def vigenere_file_enc(filename, password, offset=0, neg_pass_offset=False):
             if neg_pass_offset == True:
                 pass_offset = -pass_offset
 
-            # Get char in line
+            # Get char from line
             if (char in eng_abc) or (char in ENG_ABC):
                 if char in eng_abc:
                     current_abc = eng_abc
