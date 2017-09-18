@@ -16,8 +16,6 @@ for i in rus_abc:
     table[i]=rus_abc[len(rus_abc) - rus_abc.find(i)-1]
     table[i.upper()] = rus_abc[len(rus_abc) - rus_abc.find(i) - 1].upper()
 
-#print(table)
-
 def atbash_encdec(line):
     '''
     Кодирование и декодирование строки шифром Атбаш.
@@ -34,10 +32,7 @@ def atbash_encdec(line):
             result += char
     return result
 
-
-
 # Тесты
-
 if __name__ == '__main__':
     result = atbash_encdec('Тестовая строка, которая будет зашифрована шифром Атбаш')
     print(result)
